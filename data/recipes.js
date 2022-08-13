@@ -288,7 +288,7 @@ export const recipes = [
                "unit": "grammes"
            },
            {
-                "ingredient": "farine",
+                "ingredient": "Farine",
                 "quantity": 90,
                 "unit": "grammes"
            }
@@ -364,7 +364,7 @@ export const recipes = [
         "time": 60,
         "description": "Commencer par cuire les pommes de terre dans l'eau bouillante. Puis epluchez les et coupez les en rondelles. Emincer les oignons puis les faire dorer dans du beurre. Ajouter le jambon fumé coupé en en morceaux ainsi que les pommes de terres. Salez, poivrez à votre gout ( et celui de vos convives ) Laissez cuisiner durant environ 10 minutes puis ajouter le vin blanc. Après 5 minutes, mettre le tout dans un plat à gratin. Coupez le rebelochon, soit en tranches, soit le couper en 2 dans le sens de l'épaisseur et recouvrir les pommes de terre. Cuire au four (environ 220°) durant 25 minutes. C'est prêt !",
         "appliance":"Four",
-        "ustensils": ["Plat à gratin", "Couteau", "Économe"]
+        "ustensils": ["Plat à gratin", "Couteau", "Econome"]
     },
     {
         "id": 11,
@@ -433,7 +433,7 @@ export const recipes = [
         "time": 40,
         "description": "Éplucher les fruits et les couper en morceaux, les mettre dans une casserole en ajoutant l'eau et le sucre vanillé. Laisser cuire 15 minutes en remuant régulièrement.",
         "appliance": "Casserole",
-        "ustensils": ["Couteau", "Économe"]
+        "ustensils": ["Couteau", "Econome"]
     },
     {
         "id": 13,
@@ -451,7 +451,7 @@ export const recipes = [
                 "unit": "grammes"
             },
             {
-                "ingredient": "Échalote",
+                "ingredient": "Echalote",
                 "quantity": 2
 
             },
@@ -461,7 +461,7 @@ export const recipes = [
                 "unit":"cuillère à soupe"
             },
             {
-                "ingredient": "huile d'olive",
+                "ingredient": "Huile d'olive",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
@@ -547,7 +547,7 @@ export const recipes = [
         ],
         "time": 60,
         "description": "Mélangez dans un saladier, la farine, les oeufs, et le lait. Battez jusqu'à avoir une masse homogène. Pendant ce temps faites fondre le beurre et ajoutez en une partie à la pâte à crêpes. Faire fondre le chocolat ( avec le reste du beurre salé ). Lorsque vous chauffez les crêpes. Ajouter le chocolat fondu et les bananes coupées en rondelles. Ajoutez une touche de chantilly pour les gourmands",
-        "appliance": "Poële à crêpe",
+        "appliance": "Poêle à crêpe",
         "ustensils": ["Saladier", "Louche", "Cuillère en bois"]
     },
     {
@@ -576,7 +576,7 @@ export const recipes = [
                 "unit":"tiges"
             },
             {
-                "ingredient": "huile d'olives",
+                "ingredient": "Huile d'olive",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
@@ -702,7 +702,7 @@ export const recipes = [
                 "unit":"grammes"
             },
             {
-                "ingredient": "huile d'olive",
+                "ingredient": "Huile d'olive",
                 "quantity": 1,
                 "unit": "cuillères à soupe"
             }
@@ -887,7 +887,7 @@ export const recipes = [
                 "unit": "grammes"
             },
             {
-                "ingredient": "Chocolat noir en pepites",
+                "ingredient": "Chocolat noir",
                 "quantity": 100,
                 "unit":"grammes"
             },
@@ -915,7 +915,7 @@ export const recipes = [
                 "quantity": 1
             },
             {
-                "ingredient": "Huile d'olives"
+                "ingredient": "Huile d'olive"
             },
             {
                 "ingredient": "Oignon",
@@ -1088,8 +1088,8 @@ export const recipes = [
         ],
         "time": 60,
         "description": "Découper en cubes les carottes et pommes de terre. Faire revenir dans du beurre. Ajouter les lardons, une fois les lardons dorés, ajouter un grand verre d'eau. Ajouter les petit poids et les haricots verts ( tous deux pré cuits ). Ajouter Sel, poivre, thyms et laurier",
-        "appliance": "Poële",
-        "ustensils": ["Couteau", "Économe"]
+        "appliance": "Poêle",
+        "ustensils": ["Couteau", "Econome"]
     },
     {
         "id": 32,
@@ -1130,7 +1130,7 @@ export const recipes = [
         "time": 20,
         "description": "Beurrer les tranches de pain, ajouter entre 2 tranches de pain de mie 1 tranche d'émental, une de blanc de dinde, et une autre d'emmental. Dans un récipient, mélanger le gruyère rappé avec le lait et la noix de muscade. Mettre sur les croque monsieux. Placer au four durnat 10 minutes.",
         "appliance": "Four",
-        "ustensils": ["Râpe à fromage", "Cuillère à Soupe", "Couteau"]
+        "ustensils": ["Râpe à fromage", "Cuillère à soupe", "Couteau"]
     },
     {
         "id": 33,
@@ -1193,7 +1193,7 @@ export const recipes = [
         "time": 25,
         "description": "Eplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
         "appliance": "Mixer",
-        "ustensils": ["Couteau", "Économe", "Cuillère en bois"]
+        "ustensils": ["Couteau", "Econome", "Cuillère en bois"]
     },
     {
         "id": 35,
@@ -1288,7 +1288,7 @@ export const recipes = [
                 "unit": "grammes"
             },
             {
-                "ingredient": "Huile d'olives",
+                "ingredient": "Huile d'olive",
                 "quantity": 25,
                 "unit": "cl"
             },
@@ -1341,7 +1341,7 @@ export const recipes = [
         "time": 20,
         "description": "Fouettez les oeufs, le sucre et le lait. tremper les tranches de pain. Le cuire au four pendant environ 10 minutes à 180°. Servir",
         "appliance": "Four",
-        "ustensils": ["Fouet", "Bol", "Cuillère à Soupe"]
+        "ustensils": ["Fouet", "Bol", "Cuillère à soupe"]
     },
     {
         "id": 39,
@@ -1516,7 +1516,7 @@ export const recipes = [
                 "unit":"grammes"
             },
             {
-                "ingredient": "farine",
+                "ingredient": "Farine",
                 "quantity": 40,
                 "unit": "grammes"
             }

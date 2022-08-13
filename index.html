@@ -26,37 +26,37 @@
             <nav class="d-flex flex-column justify-content-start align-self-start">
                 <ul class="tags d-flex"></ul>
                 <div class="d-flex justify-content-start align-self-start">
-                    <div class ="d-flex flex-column align-items-center justify-content-center dropdown-container">
-                        <button type="button" class="btn btn-primary btn-ingredients ingredients">
-                            Ingrédients<i class="fas fa-chevron-down  i-ingredients ingredients"></i>
-                        </button>
-                        <input autocomplete="off" type="text" class="form-control dropdown-form input-ingredients ingredients" id="search-ingredients"
+                    <div class="d-flex flex-column align-items-center justify-content-center menu-container">
+                        <input autocomplete="off" type="text" class="form-control menu-form input-ingredients ingredients" id="search-ingredients"
                             placeholder="Rechercher un ingrédient">
-                        <ul class="ingredients dropdown-list dropdown-list-ingredients"></ul>
+                        <button type="button" class="btn btn-primary btn-ingredients ingredients">
+                            Ingrédients<i class="fas fa-chevron-down i-ingredients ingredients"></i>
+                        </button>
+                        <ul class="ingredients menu-list menu-list-ingredients"></ul>
                     </div>
 
-                    <div class = "d-flex flex-column align-items-center justify-content-center dropdown-container">
-                        <button type="button" class="btn btn-success btn-appareil appareil">
-                            Appareil<i class="fas fa-chevron-down  i-appareil appareil"></i>
-                        </button>
-                        <input autocomplete="off" type="text" class="form-control dropdown-form input-appareil appareil" id="search-appareil"
+                    <div class="d-flex flex-column align-items-center justify-content-center menu-container">
+                        <input autocomplete="off" type="text" class="form-control menu-form input-appareil appareil" id="search-appareil"
                             placeholder="Rechercher un appareil">
-                        <ul class="appareils dropdown-list dropdown-list-appareil"></ul>
+                        <button type="button" class="btn btn-success btn-appareil appareil">
+                            Appareils<i class="fas fa-chevron-down i-appareil appareil"></i>
+                        </button>
+                        <ul class="appareils menu-list menu-list-appareil"></ul>
                     </div>
 
-                    <div class = "d-flex flex-column align-items-center justify-content-center dropdown-container">
-                        <button type="button" class="btn btn-danger btn-ustensiles ustensiles">
-                            Ustensiles<i class="fas fa-chevron-down  i-ustensiles ustensiles"></i>
-                        </button>
-                        <input autocomplete="off" type="text" class="form-control dropdown-form ustensiles input-ustensiles" id="search-ustensiles"
+                    <div class="d-flex flex-column align-items-center justify-content-center menu-container">
+                        <input autocomplete="off" type="text" class="form-control menu-form ustensiles input-ustensiles" id="search-ustensiles"
                             placeholder="Rechercher un ustensile">
-                        <ul class="ustensile dropdown-list dropdown-list-ustensiles"></ul>
+                        <button type="button" class="btn btn-danger btn-ustensiles ustensiles">
+                            Ustensiles<i class="fas fa-chevron-down i-ustensiles ustensiles"></i>
+                        </button>
+                        <ul class="ustensile menu-list menu-list-ustensiles"></ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main class = "d-flex flex-row flex-wrap justify-content-around"></main>
+        <main class="d-flex flex-row flex-wrap justify-content-around"></main>
 
         <script type="module" src="./scripts/index.js"></script>
     </body>

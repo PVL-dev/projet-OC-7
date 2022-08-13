@@ -5,44 +5,44 @@ body {
 }
 
 ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-width: 40px;
-height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 h1 {
-color: #d04f4f;
-font-weight: bold;
-font-size: 36px;
-line-height: 47px;
+    color: #d04f4f;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
 }
 
 
 /*-------- Barre de recherche --------*/
 .form-group {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .main-search {
-position: relative;
-left: 8px;
-width: 90vw;
-height: 50px;
+    position: relative;
+    left: 8px;
+    width: 90vw;
+    height: 50px;
 
-background: #e7e7e7;
-border: 0px solid black;
-margin: 10px 0px;
+    background: #e7e7e7;
+    border: 0px solid black;
+    margin: 10px 0px;
 }
 
 .form-group > i {
-position: relative;
-left: -20px;
+    position: relative;
+    left: -20px;
 }
 
 
@@ -80,80 +80,154 @@ left: -20px;
 
 
 /*-------- Menus de tri --------*/
-.dropdown-form {
+.menu-container {
+    position: relative;
+}
+
+
+.btn {
+    margin-right: 2vw;
+    padding: 22px 20px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.btn > i {
+    margin-left: 10px;
+}
+
+.btn-active {
+    display: flex;
+    justify-content: flex-end;
+    width: 670px;
+    color: transparent !important;
+    border-radius: 5px 5px 0 0;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited,
+.btn-primary:focus, .menu-list-ingredients {
+    background-color: #007bff;
+    box-shadow: none;
+    color: #ffffff;
+}
+.menu-form-active:hover ~ .btn-primary, .btn-primary:hover {
+    background-color: #007bffdf;
+}
+.btn-primary ~ ul {
+    border-color: #007bff;
+}
+
+.btn-success, .btn-success:active, .btn-success:visited,
+.btn-success:focus, .menu-list-appareil {
+    background-color: #68d9a4;
+    box-shadow: none;
+    color: #ffffff;
+}
+.menu-form-active:hover ~ .btn-success, .btn-success:hover {
+    background-color: #68d9a4df;
+}
+.btn-success ~ ul {
+    border-color: #68d9a4;
+}
+
+.btn-danger, .btn-danger:active, .btn-danger:visited,
+.btn-danger:focus, .menu-list-ustensiles {
+    background-color: #ed6454;
+    box-shadow: none;
+    color: #ffffff;
+}
+.menu-form-active:hover ~ .btn-danger, .btn-danger:hover {
+    background-color: #ed6454df;
+}
+.btn-danger ~ ul {
+    border-color: #ed6454;
+}
+
+
+.menu-form {
     display: none;
     width: 40%;
     height: 70px;
 }
 
-.dropdown-form-active, .dropdown-form-active:focus {
-display: block;
-position: absolute;
-width: 630px;
-left: 0;
+.menu-form-active, .menu-form-active:focus {
+    display: block;
+    position: absolute;
+    width: 630px;
+    left: 0;
 
-background-color: transparent;
-border: none;
-color: white;
-box-shadow: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    box-shadow: none;
 }
 
-.dropdown-form-active::placeholder {
-font-size: 18px;
-line-height: 22px;
-text-align: left;
-color: #ffffff;
-opacity: 0.5;
+.menu-form-active::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    color: #ffffff;
+    opacity: 0.5;
+    z-index: 10;
 }
 
-.dropdown-form-20 {
-width: 410px;
+.menu-form-large {
+    width: 410px;
 }
 
-.dropdown-form-10 {
-width: 200px;
+.menu-form-small {
+    width: 200px;
 }
 
-.dropdown-container {
-position: relative;
+
+.menu-list {
+    display: none;
 }
 
-button > i {
-margin-left: 10px;
+.menu-list-active {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 670px;
+    max-height: 300px;
+
+    overflow-y: scroll;
+    border-bottom: 5px solid;
+    border-radius: 0 0 5px 5px;
+
+    top: 68px;
+    left: 0;
+    padding: 3%;
+}
+.menu-list-active::-webkit-scrollbar {
+    background: none;
+    width: 10px;
+}
+.menu-list-active::-webkit-scrollbar-thumb {
+    background-color: #a4a4a4;
+    border-radius: 10px;
 }
 
-.dropdown-list {
-display: none;
+.menu-large {
+    width: 450px;
 }
 
-.dropdown-list li {
-width: 200px;
-font-size: 18px;
-line-height: 22px;
-cursor: pointer;
-margin: 5px 0;
+.menu-small {
+    width: 250px;
 }
 
-.dropdown-list li:hover {
-font-size: 20px;
+.menu-list li {
+    width: 200px;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    margin: 5px 0;
 }
 
-.dropdown-list-active {
-position: absolute;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
-width: 670px;
-
-top: 68px;
-left: 0;
-padding: 3%;
-}
-
-.btn {
-margin-right: 2vw;
-padding: 22px 20px;
+.menu-list li:hover {
+    font-size: 20px;
 }
 
 

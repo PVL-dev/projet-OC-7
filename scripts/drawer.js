@@ -3,6 +3,7 @@ export let sortedRecipes = [];
 export const drawRecipes = () => {
     const main = document.querySelector('main');
     main.replaceChildren();
+    console.log(sortedRecipes);
 
     sortedRecipes[0].forEach((recipe) => { // Pour chaque recette du tableau trié
         const newArcticle = document.createElement('article');

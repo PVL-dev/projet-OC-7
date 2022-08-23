@@ -1,5 +1,5 @@
 import { sortedRecipes } from '../scripts/drawer.js';
-import { search, ingredientsArray, appareilsArray, ustensilesArray, searchedTags } from '../scripts/search.js';
+import { startAlgorythm, ingredientsArray, appareilsArray, ustensilesArray, searchedTags } from '../scripts/search.js';
 
 let menuInput;
 let menuBtn;
@@ -222,8 +222,7 @@ const addTag = (Array, newTag) => {
     if (tagToken === 0) {
         Array.push(newTag);
     };
-    testor();
-    search(); // Lance une nouvelle recherche avec le tag en plus
+    startAlgorythm(); // Lance une nouvelle recherche avec le tag en plus
 };
 
 const removeTag = (e) => {
@@ -252,12 +251,7 @@ const removeTag = (e) => {
         });
 
         tag.remove(); // Supprime le tag du DOM
-        testor();
-        search(); // Lance une nouvelle recherche avec le tag en moins
+        startAlgorythm(); // Lance une nouvelle recherche avec le tag en moins
     };
-};
-
-const testor = () => {
-    console.log({ingredientsArray, appareilsArray, ustensilesArray});
 };
 

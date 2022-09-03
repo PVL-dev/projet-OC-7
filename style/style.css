@@ -148,6 +148,9 @@ h1 {
     display: none;
     width: 40%;
     height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .menu-form-active, .menu-form-active:focus {

@@ -7,6 +7,7 @@ let menuIcon;
 let menuList;
 let menuName;
 let activeMenu;
+export let menuOpened;
 
 export const eventMenus = () => {
     document.querySelectorAll(".btn").forEach((e) => {
@@ -71,12 +72,14 @@ const toggleMenu = () => {
         cleanInput('input-ingredients');
         cleanInput('input-appareil');
         cleanInput('input-ustensiles');
+        menuOpened = false;
     } else {
         menuInput.classList.add("menu-form-active");
         menuList.classList.add("menu-list-active");
         menuBtn.classList.add("btn-active");
         menuIcon.style.color = "white";
         menuIcon.style.transform = "rotate(180deg)";
+        menuOpened = true;
     };
 };
 

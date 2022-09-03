@@ -1,5 +1,3 @@
-import { recipes } from '../data/recipes.js';
-import { drawRecipes, sortedRecipes } from './drawer.js';
 import { menuTagList } from './menus.js';
 import { searchAlgorythm } from './algorythm.js';
 
@@ -25,7 +23,6 @@ const mainSearch = () => {
     let mainSearchValue = [];
     const textInput = document.querySelector(".main-search"); // Récupère l'input principal et le divise en mots clés
     mainSearchValue[0] = textInput.value.split(" ");
-    console.log(mainSearchValue);
     if (mainSearchValue[0] == "") {
         mainSearchArray = [[]];
     } else {
@@ -36,7 +33,6 @@ const mainSearch = () => {
 };
 
 export const startAlgorythm = () => {
-    let sortingPath = ["description", "name", "ingredients"]; // Catégories dans lesquelles rechercher dans la base de données
     let searchDatas = [];
 
     mainSearchArray[0].forEach((elmt) => {
@@ -52,7 +48,7 @@ export const startAlgorythm = () => {
         searchDatas.push(elmt);
     });
 
-    searchAlgorythm(sortingPath, searchDatas);
+    searchAlgorythm(searchDatas);
 };
 
 const tagSearch = (e) => {

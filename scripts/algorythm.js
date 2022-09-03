@@ -1,22 +1,35 @@
 import { recipes } from "../data/recipes.js";
 import { drawRecipes, sortedRecipes } from "./drawer.js";
+import { menuOpened, menuTagList } from "./menus.js";
 
-export const searchAlgorythm = (sortingPath, searchDatas) => {
-    console.log('path =', sortingPath, 'values =', searchDatas);
+export const searchAlgorythm = (searchDatas) => {
+    console.log('values =', searchDatas);
+    
+    sortedRecipes[0] = recipes;
 
-    if (!searchDatas[0]) {
+    if (searchDatas.length == 0) {
         console.log("Aucune données à rechercher")
-        sortedRecipes[0] = recipes;
     } else {
-        let resultat = recipes.filter(function(element) {
-            return element.description.toLocaleLowerCase().includes(searchDatas[0].toLocaleLowerCase());
-        });
-        //let resultat = recipes.filter(elmt => elmt.description.toLocaleLowerCase().includes(searchDatas[0].toLocaleLowerCase()));
-        console.log(resultat);
+        let finalResult = [];
+        finalResult = sortedRecipes[0];
 
-        sortedRecipes[0] = resultat;
+        searchDatas.forEach(element => {
+            let rawResult = finalResult.filter(recette => {
+                return recette.name.toLowerCase().includes(element.toLowerCase())
+                    || recette.description.toLowerCase().includes(element.toLowerCase())
+                    || recette.appliance.toLowerCase().includes(element.toLowerCase())
+                    || recette.ingredients.some((ingredient)=> ingredient.ingredient.toLowerCase().includes(element.toLowerCase()))
+                    || recette.ustensils.some((ustensil)=> ustensil.toLowerCase().includes(element.toLowerCase()))
+            });
+            finalResult = rawResult;
+        });
+        
+        sortedRecipes[0] = finalResult;
     };
     
     drawRecipes();
+    if (menuOpened == true) {
+        menuTagList();
+    };
 };
 

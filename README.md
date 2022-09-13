@@ -1,4 +1,7 @@
-# projet-OC-7
+# projet-OC-7 - Les Petits Plats
+
+Fiche d'investigation de fonctionnalité - Recherche principale
+![Fiche d'investigation de fonctionnalité](https://user-images.githubusercontent.com/99485287/189925658-97d3829c-5154-487c-8cc8-281015b3b8e3.jpg)
 
 Logigramme complet de la fonctionnalité de recherche
 ![Logigramme P7](https://user-images.githubusercontent.com/99485287/189910843-92365211-79d2-41fd-b599-e26992b4c7b3.png)

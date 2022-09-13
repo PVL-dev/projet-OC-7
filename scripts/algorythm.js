@@ -4,27 +4,24 @@ import { menuOpened, menuTagList } from "./menus.js";
 
 export const searchAlgorythm = (searchDatas) => {
     console.log('values =', searchDatas);
-    
     sortedRecipes[0] = recipes;
 
     if (searchDatas.length == 0) {
         console.log("Aucune données à rechercher")
     } else {
-        let finalResult = [];
-        finalResult = sortedRecipes[0];
-
-        searchDatas.forEach(element => {
-            let rawResult = finalResult.filter(recette => {
-                return recette.name.toLowerCase().includes(element.toLowerCase())
-                    || recette.description.toLowerCase().includes(element.toLowerCase())
-                    || recette.appliance.toLowerCase().includes(element.toLowerCase())
-                    || recette.ingredients.some((ingredient)=> ingredient.ingredient.toLowerCase().includes(element.toLowerCase()))
-                    || recette.ustensils.some((ustensil)=> ustensil.toLowerCase().includes(element.toLowerCase()))
+        console.time('SearchTime');
+        searchDatas.forEach(data => {
+            let rawResult = sortedRecipes[0].filter(recette => {
+                return recette.name.toLowerCase().includes(data.toLowerCase())
+                    || recette.description.toLowerCase().includes(data.toLowerCase())
+                    || recette.appliance.toLowerCase().includes(data.toLowerCase())
+                    || recette.ingredients.some((ingredient)=> ingredient.ingredient.toLowerCase().includes(data.toLowerCase()))
+                    || recette.ustensils.some((ustensil)=> ustensil.toLowerCase().includes(data.toLowerCase()));
             });
-            finalResult = rawResult;
+            console.log(rawResult);
+            sortedRecipes[0] = rawResult;
         });
-        
-        sortedRecipes[0] = finalResult;
+        console.timeEnd('SearchTime');
     };
     
     drawRecipes();

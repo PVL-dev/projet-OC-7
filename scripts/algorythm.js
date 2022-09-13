@@ -7,7 +7,7 @@ export const searchAlgorythm = (searchDatas) => {
     sortedRecipes[0] = recipes;
 
     if (searchDatas.length == 0) {
-        console.log("Aucune données à rechercher")
+        console.log("Aucune données à rechercher");
     } else {
         console.time('SearchTime');
         searchDatas.forEach(data => {

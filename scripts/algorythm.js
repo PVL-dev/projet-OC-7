@@ -18,7 +18,6 @@ export const searchAlgorythm = (searchDatas) => {
                     || recette.ingredients.some((ingredient)=> ingredient.ingredient.toLowerCase().includes(data.toLowerCase()))
                     || recette.ustensils.some((ustensil)=> ustensil.toLowerCase().includes(data.toLowerCase()));
             });
-            console.log(rawResult);
             sortedRecipes[0] = rawResult;
         });
         console.timeEnd('SearchTime');

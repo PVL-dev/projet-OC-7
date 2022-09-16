@@ -23,12 +23,15 @@ const mainSearch = () => {
     let mainSearchValue = [];
     const textInput = document.querySelector(".main-search"); // Récupère l'input principal et le divise en mots clés
     mainSearchValue[0] = textInput.value.split(" ");
+
     if (mainSearchValue[0] == "") {
         mainSearchArray = [[]];
     } else {
-        mainSearchArray[0] = mainSearchValue[0];
+        if (mainSearchValue[0][0].length >= 3) {
+            mainSearchArray[0] = mainSearchValue[0];
+        };
     };
-
+    
     startAlgorythm();
 };
 
